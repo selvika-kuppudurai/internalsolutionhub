@@ -1,0 +1,100 @@
+// .login-container {
+//   height: 100vh;
+//   background-image: url('../assets/Loginimage.png');
+//   background-size: cover;
+//   background-position: center;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+.login-wrapper {
+    background: url('../assets/Loginimage.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+
+    .login-content {
+        font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding-top: 1%;
+        padding-left: 3%;
+        text-align: left;
+        color: white;
+        max-width: 400px;
+        // padding: 20px;
+        margin-top: 25%;
+        margin-left: 10%;
+
+        .lv-logo {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            width: 120px;
+        }
+
+        .heading h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+
+            span {
+                color: #00bfa5;
+
+                &.hub {
+                    color: #f9b233;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.8rem;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            font-weight: 700;
+        }
+
+        .sub {
+            padding-top: 6%;
+            margin-left: 20%;
+            p {
+                font-size: 9px;
+                font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                
+            }
+
+        }
+
+        .ml-10 {
+            margin-left: 10%;
+            
+        }
+        .ml-15{
+            margin-left: 15%;
+        }
+
+        .ml-20 {
+            margin-left: 24%;
+        }
+
+        .google-btn {
+            margin-top: 30px;
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            margin-left: 23%;
+
+            &:hover {
+                background-color: #f1f1f1;
+            }
+        }
+    }
+}
