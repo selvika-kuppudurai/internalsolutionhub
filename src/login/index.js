@@ -6,6 +6,7 @@ import logo from "../assets/lv-logo-white.png"
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,22 +19,24 @@ const Login = () => {
   };
 
   return (
-        <div className="login-wrapper">
+    <div className="login-wrapper">
       <div className="login-content">
         <img src={logo} alt="LatentView" className="lv-logo" />
         <div className="heading">
-          {/* <h1>Internal <span>Solution</span> <span className="hub">Hub</span></h1> */}
           <div className="text-left">
-  <p>Discover, Manage and Track</p>
-  <p className="ml-10">all your software assets</p>
-  <p className="ml-20">from anywhere</p>
-</div>
-      <div className="sub">
-        <p>Internal Solution Hub offers a single view to track</p>
-        <p className='ml-15'>and manage all your assets.</p>
-      </div>
-          
-          <button className="google-btn">
+            <p>Discover, Manage and Track</p>
+            <p className="ml-10">all your software assets</p>
+            <p className="ml-20">from anywhere</p>
+          </div>
+          <div className="sub">
+            <p>Internal Solution Hub offers a single view to track</p>
+            <p className='ml-15'>and manage all your assets.</p>
+          </div>
+
+          <button className="google-btn" onClick={() => {
+            console.log('Home Called')
+            navigate("/home")
+            }}>
             <img src="https://img.icons8.com/color/16/google-logo.png" alt="Google" />
             Sign in with Google
           </button>
